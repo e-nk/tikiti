@@ -5,7 +5,7 @@ const nextConfig: NextConfig = {
  images: {
    remotePatterns: [
      {
-       hostname: "mellow-seahorse-605.convex.cloud",
+       hostname: "ceaseless-bloodhound-283.convex.cloud",
        protocol: "https",
      },
    ],
