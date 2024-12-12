@@ -10,7 +10,7 @@ export type Metrics = {
   refundedTickets: number;
   cancelledTickets: number;
   revenue: number;
-}; 
+};
 
 // Initialize rate limiter
 const rateLimiter = new RateLimiter(components.rateLimiter, {

@@ -25,10 +25,7 @@ export default function EventCard({ eventId }: { eventId: Id<"events"> }) {
   const router = useRouter();
   const event = useQuery(api.events.getById, { eventId });
   const availability = useQuery(api.events.getEventAvailability, { eventId });
-  const userTicket = useQuery(api.tickets.getUserTicketForEvent, {
-    eventId,
-    userId: user?.id ?? "",
-  });
+  const userTicket = useQuery(api.tickets.getUserTicketForEvent, {eventId,userId: user?.id ?? "",});
   const queuePosition = useQuery(api.waitingList.getQueuePosition, {
     eventId,
     userId: user?.id ?? "",
