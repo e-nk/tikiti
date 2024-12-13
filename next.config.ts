@@ -8,6 +8,10 @@ const nextConfig: NextConfig = {
        hostname: "ceaseless-bloodhound-283.convex.cloud",
        protocol: "https",
      },
+		 {
+			hostname: "beloved-zebra-9.convex.cloud",
+			protocol: "https",
+		 }
    ],
  },
 };
